@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Service]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [Description] NVARCHAR(500) NOT NULL, 
+    [Icon] NVARCHAR(500) NOT NULL, 
+    [OrderNo] INT NOT NULL
+)

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Enquiry]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [EMailId] NVARCHAR(50) NOT NULL, 
+    [PhoneNo] NVARCHAR(50) NOT NULL, 
+    [ServiceId] INT NOT NULL, 
+    [Details] NVARCHAR(MAX) NULL
+)
