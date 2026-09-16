@@ -1,4 +1,6 @@
 using uss.ui.Components;
+using uss.ui.Services;
+using uss.ui.Services.Interface;
 
 namespace uss.ui
 {
@@ -11,7 +13,11 @@ namespace uss.ui
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
+            builder.Services.AddHttpClient("ussapi", httpclient => {
+                httpclient.BaseAddress = new Uri(builder.Configuration["ussapi"]);
+            });
 
+            builder.Services.AddScoped<ICompanyService, CompanyService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

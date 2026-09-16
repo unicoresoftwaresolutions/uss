@@ -1,4 +1,8 @@
-﻿
+﻿@using uss.ui.Services.Interface;
+@using uss.entity;
+
+@inject ICompanyService companyService;
+
 <section class="hero" id="home">
 
     <div class="hero-grid"></div>
@@ -197,3 +201,10 @@
     </div>
 
 </section>
+
+@code{
+    Company company;
+    protected override async Task OnInitializedAsync(){
+        company = companyService.Get();
+    }
+}
