@@ -1,0 +1,20 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using uss.business.Interface;
+using uss.model;
+
+namespace uss.api.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CompanyController : ControllerBase
+    {
+        private ICompanyBusiness business;
+        public CompanyController(ICompanyBusiness business) { this.business = business; }
+        [HttpGet]
+        public Company get()
+        {
+            return business.Get();
+        }
+    }
+}
