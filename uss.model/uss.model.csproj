@@ -6,12 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.20" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\uss.model\uss.model.csproj" />
-  </ItemGroup>
-
 </Project>

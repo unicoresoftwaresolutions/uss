@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12210.168 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "uss.sql", "uss.sql\uss.sql.sqlproj", "{5EC57F5E-18B0-407C-81B2-77077522CD27}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uss.service", "uss.service\uss.service.csproj", "{97F1AD07-1F22-4607-8295-93153CF3814A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uss.ui", "uss.ui\uss.ui.csproj", "{81FCC9D9-2F15-456C-8FB0-455D942041F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uss.model", "uss.model\uss.model.csproj", "{B9F183DE-DD3F-4A2D-A735-42D1C200F329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{81FCC9D9-2F15-456C-8FB0-455D942041F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81FCC9D9-2F15-456C-8FB0-455D942041F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81FCC9D9-2F15-456C-8FB0-455D942041F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F183DE-DD3F-4A2D-A735-42D1C200F329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F183DE-DD3F-4A2D-A735-42D1C200F329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F183DE-DD3F-4A2D-A735-42D1C200F329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F183DE-DD3F-4A2D-A735-42D1C200F329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using uss.business.Interface;
-using uss.entity;
+using uss.model;
 
 namespace uss.service.Controllers
 {

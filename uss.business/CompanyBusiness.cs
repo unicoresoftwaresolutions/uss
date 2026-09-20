@@ -1,6 +1,6 @@
 ﻿using uss.business.Interface;
 using uss.data.Interface;
-using uss.entity;
+using uss.model;
 
 namespace uss.business
 {

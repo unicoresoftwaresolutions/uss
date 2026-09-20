@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace uss.entity
+namespace uss.model
 {
     public class Company
     {

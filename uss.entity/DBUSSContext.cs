@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+using uss.model;
 namespace uss.entity
 {
     public class DBUSSContext : DbContext
