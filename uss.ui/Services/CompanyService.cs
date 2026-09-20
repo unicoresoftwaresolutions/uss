@@ -1,4 +1,4 @@
-﻿using uss.entity;
+﻿using uss.model;
 using uss.ui.Services.Interface;
 
 namespace uss.ui.Services
