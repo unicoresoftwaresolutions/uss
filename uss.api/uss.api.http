@@ -1,0 +1,6 @@
+@uss.api_HostAddress = http://localhost:5264
+
+GET {{uss.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
