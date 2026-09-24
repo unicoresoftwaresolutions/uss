@@ -1,6 +1,5 @@
 using uss.ui.Components;
 using uss.ui.Services;
-using uss.ui.Services.Interface;
 
 namespace uss.ui
 {
@@ -14,11 +13,15 @@ namespace uss.ui
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
-            builder.Services.AddHttpClient("ussapi", httpclient => {
-                httpclient.BaseAddress = new Uri(builder.Configuration["ussapi"]);
+
+            builder.Services.AddHttpClient<CompanyService>(client =>
+            {
+                // This URL uses "https+http://" to indicate HTTPS is preferred over HTTP.
+                // Learn more about service discovery scheme resolution at https://aka.ms/dotnet/sdschemes.
+                client.BaseAddress = new("https+http://ussapi/api/");
             });
 
-            builder.Services.AddScoped<ICompanyService, CompanyService>();
+
             var app = builder.Build();
             app.MapDefaultEndpoints();
 
